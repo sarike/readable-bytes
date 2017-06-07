@@ -18,7 +18,7 @@
     "pretty"
   ],
   "author": "sarike@timefly.cn",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "babel-jest": "^20.0.3",
     "babel-preset-es2015": "^6.24.1",
