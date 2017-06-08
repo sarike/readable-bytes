@@ -1,5 +1,7 @@
 # readable-bytes
 
+[![Build Status](https://travis-ci.org/tony19/polymer-typescript-starter-kit.svg?branch=master)](https://travis-ci.org/tony19/polymer-typescript-starter-kit)
+
 A simple useful util to convert bytes to pretty string with proper or specified unit.
 
 # install
