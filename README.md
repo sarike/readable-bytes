@@ -29,7 +29,7 @@ readableBytes(1000 * 1000, 'KB') // 1000 KB
 //base 2
 readableBytes(1024, null, 2) // 1KB
 readableBytes(1024 * 1024, null, 2) // 1MB
-readableBytes(1024 * 1024, 'KB', 2) // 1000 MB
+readableBytes(1024 * 1024, 'KB', 2) // 1024 KB
 ```
 
 
