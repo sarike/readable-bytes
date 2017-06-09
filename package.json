@@ -1,10 +1,11 @@
 {
     "name": "readable-bytes",
     "version": "1.0.1",
+    "repository": "sarike/readable-bytes",
     "description": "Convert Bytes to readable string with proper unit",
     "main": "index.js",
     "scripts": {
-        "test": "jest",
+        "test": "npm run build && jest",
         "build": "babel src/index.js --out-file ./index.js --source-maps",
         "prepublish": "npm run build"
     },

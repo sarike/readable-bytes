@@ -29,7 +29,7 @@ function parseBytes(value, unit, base) {
     const i = base === BASE_2
         ? Math.floor(Math.log2(absValue) / 10)
         : Math.floor(Math.log10(absValue) / 3)
-    let j = Math.min(i, UNITS.length - 1)
+    const j = Math.min(i, UNITS.length - 1)
     const v = toFixed((absValue / Math.pow(step, j)), 2)
     return {value: v * (value/absValue), unit: UNITS[j]}
 }
