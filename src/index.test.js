@@ -5,6 +5,10 @@ test('throw Error when use with invalid value', () => {
     expect(() => readableBytes('1000', 'AB')).toThrow('unit must be one string of [B, KB, MB, GB, TB, PB, EB, ZB, YB]')
 })
 
+test('zero bytes', () => {
+    expect(readableBytes(0)).toBe('0 B')
+})
+
 test('hello readable base 10 bytes', () => {
     expect(readableBytes(1000)).toBe('1 KB')
     expect(readableBytes(1001)).toBe('1 KB')

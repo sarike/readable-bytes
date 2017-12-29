@@ -26,12 +26,19 @@ function parseBytes(value, unit, base) {
             unit,
         }
     }
-    const i = base === BASE_2
+    let i
+    if (absValue === 0) i = 0
+    else {
+        i = base === BASE_2
         ? Math.floor(Math.log2(absValue) / 10)
         : Math.floor(Math.log10(absValue) / 3)
+    }
     const j = Math.min(i, UNITS.length - 1)
     const v = toFixed((absValue / Math.pow(step, j)), 2)
-    return {value: v * (value/absValue), unit: UNITS[j]}
+    return {
+        value: absValue === 0 ? 0 : v * (value/absValue),
+        unit: UNITS[j],
+    }
 }
 
 export default function readableBytes(bytes, unitStr, base) {
