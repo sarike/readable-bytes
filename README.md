@@ -24,12 +24,12 @@ import readableBytes from 'readable-bytes'
 // base 10
 readableBytes(1000) // 1 KB
 readableBytes(1000 * 1000) // 1 MB
-readableBytes(1000 * 1000, 'KB') // 1000 KB
 
-//base 2
-readableBytes(1024, null, 2) // 1KB
-readableBytes(1024 * 1024, null, 2) // 1MB
-readableBytes(1024 * 1024, 'KB', 2) // 1024 KB
+parseBytes(1000 * 1000) // { value: 1, unit: 'MB' }
+
+// base 2
+readableBytes(1024, 2) // 1KiB
+readableBytes(1024 * 1024, 2) // 1MiB
 ```
 
 
