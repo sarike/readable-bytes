@@ -1,6 +1,6 @@
 {
     "name": "readable-bytes",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "repository": "sarike/readable-bytes",
     "description": "Convert Bytes to readable string with proper unit",
     "main": "./lib/index.js",
