@@ -1,13 +1,13 @@
 {
     "name": "readable-bytes",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "repository": "sarike/readable-bytes",
     "description": "Convert Bytes to readable string with proper unit",
     "main": "./lib/index.js",
     "types": "./lib/index.js",
     "scripts": {
         "test": "jest",
-        "build": "tsc",
+        "build": "yarn test && tsc",
         "prepublishOnly": "yarn build"
     },
     "files": [
